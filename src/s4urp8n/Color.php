@@ -195,7 +195,7 @@ class Color
         return new self($red, $green, $blue, $alpha);
     }
 
-    private static function getPredefinedColors()
+    public static function getPredefinedColors()
     {
         $colors = [];
         $reflection = new \ReflectionClass(__CLASS__);
